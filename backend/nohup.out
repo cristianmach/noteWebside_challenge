@@ -1,0 +1,339 @@
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): CREATE TABLE IF NOT EXISTS `Notes` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `content` TEXT NOT NULL, `archived` TINYINT(1) DEFAULT false, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:50
+      throw new sequelizeError.ValidationError(null, this.errors);
+            ^
+
+ValidationError [SequelizeValidationError]: notNull Violation: Note.title cannot be null,
+notNull Violation: Note.content cannot be null
+    at InstanceValidator._validate (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Note.create (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.createNote (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\services\noteService.js:4:10)
+    at async createNote (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\controllers\noteController.js:5:16) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Note.title cannot be null',
+      type: 'notNull Violation',
+      path: 'title',
+      value: null,
+      origin: 'CORE',
+      instance: Note {
+        dataValues: {
+          archived: false,
+          id: null,
+          title: undefined,
+          content: undefined,
+          updatedAt: 2024-05-19T04:30:05.315Z,
+          createdAt: 2024-05-19T04:30:05.315Z
+        },
+        _previousDataValues: {},
+        uniqno: 1,
+        _changed: Set(0) {},
+        _options: {
+          isNewRecord: true,
+          _schema: null,
+          _schemaDelimiter: '',
+          attributes: undefined,
+          include: undefined,
+          raw: undefined,
+          silent: undefined
+        },
+        isNewRecord: true
+      },
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'Note.content cannot be null',
+      type: 'notNull Violation',
+      path: 'content',
+      value: null,
+      origin: 'CORE',
+      instance: Note {
+        dataValues: {
+          archived: false,
+          id: null,
+          title: undefined,
+          content: undefined,
+          updatedAt: 2024-05-19T04:30:05.315Z,
+          createdAt: 2024-05-19T04:30:05.315Z
+        },
+        _previousDataValues: {},
+        uniqno: 1,
+        _changed: Set(0) {},
+        _options: {
+          isNewRecord: true,
+          _schema: null,
+          _schemaDelimiter: '',
+          attributes: undefined,
+          include: undefined,
+          raw: undefined,
+          silent: undefined
+        },
+        isNewRecord: true
+      },
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+
+Node.js v20.11.1
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:50
+      throw new sequelizeError.ValidationError(null, this.errors);
+            ^
+
+ValidationError [SequelizeValidationError]: notNull Violation: Note.title cannot be null,
+notNull Violation: Note.content cannot be null
+    at InstanceValidator._validate (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Note.create (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async Object.createNote (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\services\noteService.js:4:10)
+    at async createNote (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\controllers\noteController.js:5:16) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Note.title cannot be null',
+      type: 'notNull Violation',
+      path: 'title',
+      value: null,
+      origin: 'CORE',
+      instance: Note {
+        dataValues: {
+          archived: false,
+          id: null,
+          title: undefined,
+          content: undefined,
+          updatedAt: 2024-05-19T05:04:26.764Z,
+          createdAt: 2024-05-19T05:04:26.764Z
+        },
+        _previousDataValues: {},
+        uniqno: 1,
+        _changed: Set(0) {},
+        _options: {
+          isNewRecord: true,
+          _schema: null,
+          _schemaDelimiter: '',
+          attributes: undefined,
+          include: undefined,
+          raw: undefined,
+          silent: undefined
+        },
+        isNewRecord: true
+      },
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'Note.content cannot be null',
+      type: 'notNull Violation',
+      path: 'content',
+      value: null,
+      origin: 'CORE',
+      instance: Note {
+        dataValues: {
+          archived: false,
+          id: null,
+          title: undefined,
+          content: undefined,
+          updatedAt: 2024-05-19T05:04:26.764Z,
+          createdAt: 2024-05-19T05:04:26.764Z
+        },
+        _previousDataValues: {},
+        uniqno: 1,
+        _changed: Set(0) {},
+        _options: {
+          isNewRecord: true,
+          _schema: null,
+          _schemaDelimiter: '',
+          attributes: undefined,
+          include: undefined,
+          raw: undefined,
+          silent: undefined
+        },
+        isNewRecord: true
+      },
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+
+Node.js v20.11.1
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '1';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '1';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '1';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '1';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 1
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '2';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '2';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '3';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '3';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '3';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '3';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '2';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '3';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '2';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+^C
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+^C
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '2';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 2
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '3';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 3
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '4';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 4
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '5';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 5
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+^C
