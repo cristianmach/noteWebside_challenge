@@ -1849,3 +1849,43 @@ Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `c
 Executing (default): DELETE FROM `Notes` WHERE `id` = 43
 Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
 Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Connected to the database
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW FULL COLUMNS FROM `Notes`;
+Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Notes' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cristianmachadoDB' AND REFERENCED_TABLE_NAME IS NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `content` `content` TEXT NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `archived` `archived` TINYINT(1) DEFAULT false;
+Executing (default): ALTER TABLE `Notes` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `category` `category` VARCHAR(255) NOT NULL;
+Executing (default): SHOW INDEX FROM `Notes`
+Server is running on port 3001
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`category`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '45';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '45';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '45';
+Executing (default): UPDATE `Notes` SET `category`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '45';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 45
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
