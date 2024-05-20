@@ -337,3 +337,1296 @@ Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `
 Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
 Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
 ^C
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+ABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\express\lib\application.js:635:24)
+    at startServer (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\server.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1899:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v20.11.1
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3000
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '6';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 6
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '7';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 7
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '8';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 8
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '9';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '9';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '9';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '9';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '9';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 9
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '10';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 10
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '11';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 11
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '12';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 12
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '13';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 13
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '15';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '14';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '14';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 14
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '15';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 15
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '16';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 16
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '17';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 17
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '18';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '18';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '18';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 18
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '20';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 20
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '19';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '19';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 19
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '21';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 21
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '22';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 22
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '23';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 23
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '24';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '24';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 24
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '25';
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '25';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 25
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '26';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '26';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '29';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '28';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 28
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '26';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 26
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '27';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 27
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '30';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 30
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '31';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '31';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '29';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '29';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 29
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '31';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 31
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '32';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '32';
+Executing (default): UPDATE `Notes` SET `archived`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '32';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 32
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '33';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 33
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3001
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+node:internal/process/promises:289
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error
+    at Query.run (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Note.findAll (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Object.getNotes (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\services\noteService.js:10:10)
+    at async getNotes (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\controllers\noteController.js:11:17) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'category' in 'field list'
+      at Packet.asError (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'category' in 'field list'",
+    sql: 'SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;',
+    parameters: undefined
+  },
+  original: Error: Unknown column 'category' in 'field list'
+      at Packet.asError (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'category' in 'field list'",
+    sql: 'SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;',
+    parameters: undefined
+  },
+  sql: 'SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;',
+  parameters: {}
+}
+
+Node.js v20.11.1
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW INDEX FROM `Notes`
+Connected to the database
+Server is running on port 3001
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+node:internal/process/promises:289
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error
+    at Query.run (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Note.findAll (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Object.getNotes (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\services\noteService.js:10:10)
+    at async getNotes (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\controllers\noteController.js:11:17) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'category' in 'field list'
+      at Packet.asError (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'category' in 'field list'",
+    sql: 'SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;',
+    parameters: undefined
+  },
+  original: Error: Unknown column 'category' in 'field list'
+      at Packet.asError (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'category' in 'field list'",
+    sql: 'SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;',
+    parameters: undefined
+  },
+  sql: 'SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;',
+  parameters: {}
+}
+
+Node.js v20.11.1
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Connected to the database
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW FULL COLUMNS FROM `Notes`;
+Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Notes' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cristianmachadoDB' AND REFERENCED_TABLE_NAME IS NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `content` `content` TEXT NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `archived` `archived` TINYINT(1) DEFAULT false;
+Executing (default): ALTER TABLE `Notes` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `category` `category` VARCHAR(255) NOT NULL;
+Executing (default): SHOW INDEX FROM `Notes`
+Server is running on port 3001
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`category`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): INSERT INTO `Notes` (`id`,`title`,`content`,`category`,`archived`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+ TABLE `Notes` CHANGE `content` `content` TEXT NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `archived` `archived` TINYINT(1) DEFAULT false;
+Executing (default): ALTER TABLE `Notes` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `category` `category` VARCHAR(255) NOT NULL;
+Executing (default): SHOW INDEX FROM `Notes`
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\node_modules\express\lib\application.js:635:24)
+    at startServer (C:\Users\Personal\Documents\TRABAJOS\2024\PROGRAMACION\PRUEBAS TECNICAS\challenge\backend\server.js:18:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1899:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v20.11.1
+
+> backend@1.0.0 start
+> node server.js
+
+Executing (default): SELECT 1+1 AS result
+Connected to the database
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Notes' AND TABLE_SCHEMA = 'cristianmachadoDB'
+Executing (default): SHOW FULL COLUMNS FROM `Notes`;
+Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Notes' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cristianmachadoDB' AND REFERENCED_TABLE_NAME IS NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `content` `content` TEXT NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `archived` `archived` TINYINT(1) DEFAULT false;
+Executing (default): ALTER TABLE `Notes` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+Executing (default): ALTER TABLE `Notes` CHANGE `category` `category` VARCHAR(255) NOT NULL;
+Executing (default): SHOW INDEX FROM `Notes`
+Server is running on port 3001
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '37';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 37
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`id` = '35';
+Executing (default): DELETE FROM `Notes` WHERE `id` = 35
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = false;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;
+Executing (default): SELECT `id`, `title`, `content`, `category`, `archived`, `createdAt`, `updatedAt` FROM `Notes` AS `Note` WHERE `Note`.`archived` = true;

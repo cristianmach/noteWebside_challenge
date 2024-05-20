@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#in {
+  background-color: burlywood;
+}
+
+#title {
+  color: burlywood;
+  text-decoration-color: burlywood;
+}
+
+.container-fluid {
+  background-color: lightgray;
+}
+
+#out {
+  background-color: lightgray;
 }

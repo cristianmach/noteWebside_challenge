@@ -1,8 +1,8 @@
 const NoteService = require('../services/noteService');
 
 const createNote = async (req, res) => {
-  const { title, content } = req.body;
-  const note = await NoteService.createNote({ title, content });
+  const { title, content, category } = req.body;
+  const note = await NoteService.createNote({title, content, category});
   res.json(note);
 };
 
@@ -13,9 +13,9 @@ const getNotes = async (req, res) => {
 };
 
 const updateNote = async (req, res) => {
-  const { id } = req.params;
-  const { title, content } = req.body;
-  const note = await NoteService.updateNote(id, { title, content });
+  const { id } = req.params; 
+  const { title, content, category } = req.body;
+  const note = await NoteService.updateNote(id, { title, content, category });
   if (note) {
     res.json(note);
   } else {

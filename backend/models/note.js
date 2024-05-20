@@ -10,6 +10,10 @@ const Note = sequelize.define('Note', {
     type: DataTypes.TEXT,
     allowNull: false
   },
+  category: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
   archived: {
     type: DataTypes.BOOLEAN,
     defaultValue: false
