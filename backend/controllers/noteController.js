@@ -1,4 +1,6 @@
-const NoteService = require('../services/noteService');
+const NoteService = require('../services/noteService'); 
+
+//HTTP handlers
 
 const createNote = async (req, res) => {
   const { title, content, category } = req.body;

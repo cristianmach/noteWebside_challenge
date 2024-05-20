@@ -3,9 +3,12 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-//show list Notes and filter for category
 const NoteList = ({ notes, onUpdateNote, onDeleteNote, onArchiveNote }) => {
-  const [selectedCategory, setSelectedCategory] = useState('ALL'); 
+  const [selectedCategory, setSelectedCategory] = useState('ALL');
+  const [editingNote, setEditingNote] = useState(null);
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [category, setCategory] = useState('IMPORTANT');
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -14,6 +17,18 @@ const NoteList = ({ notes, onUpdateNote, onDeleteNote, onArchiveNote }) => {
   const filteredNotes = selectedCategory === 'ALL'
     ? notes
     : notes.filter(note => note.category === selectedCategory);
+
+  const handleEditClick = (note) => {
+    setEditingNote(note);
+    setTitle(note.title);
+    setContent(note.content);
+    setCategory(note.category);
+  };
+
+  const handleSaveClick = () => {
+    onUpdateNote(editingNote.id, { title, content, category });
+    setEditingNote(null);
+  };
 
   return (
     <div className='text-light fw-bold text-center d-flex flex-column align-items-center'>
@@ -42,7 +57,7 @@ const NoteList = ({ notes, onUpdateNote, onDeleteNote, onArchiveNote }) => {
                   {note.content}
                 </Card.Text>
                 <div className='m-2'>
-                  <Button className='me-1' variant="secondary" onClick={() => onUpdateNote(note)}>Update</Button>
+                  <Button className='me-1' variant="secondary" onClick={() => handleEditClick(note)}>Edit</Button>
                   <Button className='me-1' variant="secondary" onClick={() => onDeleteNote(note.id)}>Delete</Button>
                   <Button className='' variant="secondary" onClick={() => onArchiveNote(note.id, true)}>Archive</Button>
                 </div>
@@ -51,10 +66,46 @@ const NoteList = ({ notes, onUpdateNote, onDeleteNote, onArchiveNote }) => {
           </div>
         ))}
       </div>
+      {editingNote && (
+        <div className='text-center'>
+          <h3 className='my-3 text-light fw-bold'>EDIT NOTE</h3>
+          <Form className='p-3'>
+            <Form.Group className="mb-3">
+              <Form.Label className='text-light fw-bold'>TITLE</Form.Label>
+              <Form.Control 
+                type="text"
+                value={title}
+                onChange={(event) => setTitle(event.target.value)}
+                placeholder="Enter the title..."
+                required className='bg-gray'
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label className='text-light fw-bold'>CONTENT</Form.Label>
+              <Form.Control
+                value={content}
+                onChange={(event) => setContent(event.target.value)}
+                placeholder="Enter the content..."
+                required as="textarea"
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label className='text-light fw-bold'>CATEGORY</Form.Label>
+              <Form.Select 
+                value={category}
+                onChange={(event) => setCategory(event.target.value)}
+              >
+                <option value="IMPORTANT">IMPORTANT</option>
+                <option value="IT CAN WAIT">IT CAN WAIT</option>
+                <option value="NAHHH">NAHHH</option>
+              </Form.Select>
+            </Form.Group>
+            <Button variant="secondary" onClick={handleSaveClick}>Save</Button>
+          </Form>
+        </div>
+      )}
     </div>
   );
 };
 
 export default NoteList;
-
-

@@ -1,4 +1,3 @@
-// En App.js
 import React, { useState, useEffect } from 'react';
 import { createNote, getNotes, updateNote, deleteNote, archiveNote } from './services/noteService';
 import NoteForm from './components/NoteForm';

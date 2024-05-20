@@ -1,16 +1,18 @@
-const Note = require('../models/note'); 
+const Note = require('../models/note');
 
-// Función para crear una nota
+//CRUD
+
+// Funct create a note :)
 const createNote = async (noteData) => {
   return await Note.create(noteData);
 };
 
-// Función para obtener todas las notas, con filtro opcional para archivadas
+// Funct get notes and filter :)
 const getNotes = async (archived = false) => {
   return await Note.findAll({ where: { archived } });
 };
 
-// Función para actualizar una nota
+// Funct update notes :)
 const updateNote = async (id, noteData) => {
   const note = await Note.findByPk(id);
   if (note) {
@@ -19,7 +21,7 @@ const updateNote = async (id, noteData) => {
   return null;
 };
 
-// Función para eliminar una nota
+// Funct delete notes :)
 const deleteNote = async (id) => {
   const note = await Note.findByPk(id);
   if (note) {
@@ -29,7 +31,7 @@ const deleteNote = async (id) => {
   return false;
 };
 
-// Función para archivar o desarchivar una nota
+// Funct archive notes :)
 const archiveNote = async (id, archived) => {
   const note = await Note.findByPk(id);
   if (note) {
