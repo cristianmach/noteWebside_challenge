@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-// Crear una nueva nota
+// Create a new note on base form
 const NoteForm = ({ onCreateNote }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [category, setCategory] = useState('IMPORTANT'); // Valor inicial definido
+  const [category, setCategory] = useState('IMPORTANT'); // defoult 
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,7 +14,7 @@ const NoteForm = ({ onCreateNote }) => {
     onCreateNote({ title, content, category });
     setTitle('');
     setContent('');
-    setCategory('IMPORTANT'); // Restablecer al valor inicial
+    setCategory('IMPORTANT'); // reset value initial
   };
 
   return (
