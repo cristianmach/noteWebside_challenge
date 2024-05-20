@@ -1,17 +1,18 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 const ArchivedNotes = ({ notes, onArchiveNote }) => {
   return (
     <div>
-      <h2>Archived Notes</h2>
-      <ul>
+      <h3 className='my-3 text-light fw-bold'>ARCHIVED NOTES</h3>
+      <div>
         {notes.map(note => (
-          <li key={note.id}>
+          <div key={note.id}>
             {note.text}
-            <button onClick={() => onArchiveNote(note.id, false)}>Restore</button>
-          </li>
+            <Button className='mb-2' variant="secondary" onClick={() => onArchiveNote(note.id, false)}>{note.title}</Button>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
