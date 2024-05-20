@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+//Show note list, filter, update, remove, and archived.
+
 const NoteList = ({ notes, onUpdateNote, onDeleteNote, onArchiveNote }) => {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [editingNote, setEditingNote] = useState(null);

@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
+// Archive notes 
+
 const ArchivedNotes = ({ notes, onArchiveNote }) => {
   return (
     <div>

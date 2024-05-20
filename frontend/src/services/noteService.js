@@ -1,6 +1,7 @@
 import axios from 'axios'; 
 
 // http request to backend server :)
+
 const API_URL = 'http://localhost:3001/api/notes';
 
 export const createNote = async (note) => {
